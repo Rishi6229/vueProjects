@@ -17,8 +17,9 @@ export default {
   },
   methods: {
     changeColor() {
-      this.backgroundColor = getRandomColor();
-      this.buttonText = getRandomColor();
+      const colorRec = getRandomColor();
+      this.backgroundColor = colorRec;
+      this.buttonText = colorRec;
     },
   },
 };
