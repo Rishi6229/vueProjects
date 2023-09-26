@@ -1,6 +1,9 @@
 <template>
   <div class="color-flipper">
-    <button @click="changeColor">{{ buttonText }}</button>
+    <section class="buttonField">
+      <h1>Color Flipper</h1>
+      <button class="btn" @click="changeColor">{{ buttonText }}</button>
+    </section>
     <div :style="{ backgroundColor }" class="color-box">
       <p>{{ backgroundColor }}</p>
     </div>
@@ -37,14 +40,32 @@ function getRandomColor() {
   text-align: center;
 }
 .color-box {
-  width: 200px;
-  height: 200px;
+  width: auto;
+  height: auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  margin: 20px;
   color: white;
   font-size: 24px;
   text-transform: uppercase;
+  border-radius: 20px;
+}
+.btn{
+  margin: 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 200px;
+  height: 60px;
+  background-color: aqua;
+}
+.buttonField{
+  height: auto;
+  width: auto;
+  margin:auto;
+  background-color: bisque;
+}
+#h1{
+  padding: 10px;
+  margin: 10px;
 }
 </style>
