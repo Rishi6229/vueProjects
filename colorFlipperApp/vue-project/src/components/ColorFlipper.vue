@@ -63,9 +63,10 @@ function getRandomColor() {
   width: auto;
   margin:auto;
   background-color: bisque;
+  border-radius: 20px;
 }
-#h1{
-  padding: 10px;
-  margin: 10px;
+
+.heading{
+  
 }
 </style>
