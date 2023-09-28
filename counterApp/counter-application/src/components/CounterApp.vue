@@ -8,11 +8,11 @@
 </template>
 
 <script>
-export default{
+export default {
   data() {
     return {
       count: 0,
-      InitialCount:0
+      InitialCount: 0,
     };
   },
   methods: {
@@ -20,43 +20,38 @@ export default{
       this.count = this.InitialCount + 10;
     },
     decrementCounter() {
-        this.count = this.InitialCount - 10;
+      this.count = this.InitialCount - 10;
     },
   },
 };
 </script>
 
 <style>
-
-.button-section{
-    display: flex;
-    justify-content: space-evenly;
+.button-section {
+  display: flex;
+  justify-content: space-evenly;
 }
-.inputField{
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 20px;
+.inputField {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 20px;
 }
-button{
-    height: 100px;
-    width: 100px;
-    border: 5px solid black;
-    border-radius: 10px;
-
+button {
+  height: 100px;
+  width: 100px;
+  border: 5px solid black;
+  border-radius: 10px;
 }
-p{
-    
-    display: flex;
-    justify-content: center;
+p {
+  display: flex;
+  justify-content: center;
 }
 
-.counter-app{
-    display: flex;
-    justify-content: center;
-    top:0px;
+.counter-app {
+  display: grid;
+  align-items: center;
+  top: 0px;
 }
-
-
 </style>
