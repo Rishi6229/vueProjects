@@ -1,25 +1,20 @@
 <template>
-    <div @click ="countClicks">
-        <h2>{{ name }}</h2>
-        <p>{{ message }}</p>
-        <p id="red">You have clicked me {{ count }} times</p>
+    <div>
+        <p>
+            <h1>{{ foodName }}</h1>
+        </p>
+       <p>
+        <h2>{{ foodDesc }}</h2>
+       </p>
     </div>
+  
+    
 </template>
 
 <script> 
 export default{
-    data(){
-        return{
-            name: 'Apples',
-            message: 'Sebb mat kha bhai !!',
-            count: 0,
-        }
-    },
-    methods:{
-        countClicks(){
-            this.count++;
-        }
-    }
+    props:['foodName' , 'foodDesc','isFavorite'],
+
 }
 </script>
 
