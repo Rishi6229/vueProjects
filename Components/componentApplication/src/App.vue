@@ -23,7 +23,6 @@
   </div>
 
   <div id="wrapper-2">
-    
     <p>This is a section for supplement</p>
     <supplement-item
       supplement-name="Whey Protein"
@@ -40,6 +39,26 @@
     <supplement-item
       supplement-name="Fat Burners"
       supplement-desc="Another peice of dog shit."
+    />
+  </div>
+
+  <div id="wrapper-3">
+    <p>This is a section for medicines</p>
+    <medicine-item
+      medicine-name="Paracetamol"
+      medicine-desc="Useful in treating common cold and fever"
+    />
+    <medicine-item
+      medicine-name="Dolo"
+      medicine-desc="As the name suggests banned in several countries but sold in India like nothing else."
+    />
+    <medicine-item
+      medicine-name="Corcin-Advance"
+      medicine-desc="Biggest piece of dogshit out there."
+    />
+    <medicine-item
+      medicine-name="Anasthesia"
+      medicine-desc="Usually out there available , mostly used in surguries for numbing a certain area"
     />
   </div>
 </template>
