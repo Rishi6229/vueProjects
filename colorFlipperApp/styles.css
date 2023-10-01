@@ -1,0 +1,23 @@
+
+body{
+  background-color:bisque;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    border: 20px;
+    background-color: white;
+    margin: auto;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+
+.btn{
+    display: grid;
+    align-items: center;
+}
