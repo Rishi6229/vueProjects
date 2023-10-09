@@ -1,39 +1,41 @@
 <template>
-    <div class="list-component">
-        <input class="input-form" placeholder="Enter your tasks"/>
-         <button class="btn-btn"> Add Task</button>
+    <div class="input-form">
+        <input v-model="newTask" @keyup.enter="addTask" placeholder="Add a new task">
+        <button id="btn" @click="addTask">Add</button>
     </div>
-
 </template>
-
 
 <script> 
 export default{
+    data(){
+        return{
+            newTask: '',
+        }
+    },
+    methods:{
+        addTask(){
+            if(this.newTask.trim() != '')
+            {
+                this.$emit(add-task , this.newTask);
+                this.newTask = ''
+            }
+        }
+    }
 }
 </script>
 
-<style> 
-.list-component{
-    margin-top: 20px;
+<style>
+
+.input-form{
     display: flex;
     justify-content: center;
-}
-.input-form{
-    padding: 8px;
-    border: solid black 2px;
-    border-radius: 7px;
-
-
-}
-.btn-btn{
-    border-radius: 10px;
+    justify-content: space-evenly;
     padding: 10px;
+}
+#btn{
+    padding: 20px;
     margin: 10px;
-    
+    border-color: 10px solid black;
+    border-radius: 20px;
 }
-
-.btn-btn:hover{
-    cursor: pointer;
-}
-
 </style>
